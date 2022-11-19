@@ -1,0 +1,14 @@
+portfolio/db.sqlite3
+.vscode/launch.json
+portfolio/employee/__pycache__/__init__.cpython-310.pyc
+portfolio/employee/__pycache__/admin.cpython-310.pyc
+portfolio/employee/__pycache__/apps.cpython-310.pyc
+portfolio/employee/__pycache__/models.cpython-310.pyc
+portfolio/employee/__pycache__/urls.cpython-310.pyc
+portfolio/employee/__pycache__/views.cpython-310.pyc
+portfolio/employee/migrations/__pycache__/__init__.cpython-310.pyc
+portfolio/portfolio/__pycache__/__init__.cpython-310.pyc
+portfolio/portfolio/__pycache__/settings.cpython-310.pyc
+portfolio/portfolio/__pycache__/urls.cpython-310.pyc
+portfolio/portfolio/__pycache__/views.cpython-310.pyc
+portfolio/portfolio/__pycache__/wsgi.cpython-310.pyc
