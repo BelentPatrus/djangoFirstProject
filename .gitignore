@@ -12,3 +12,8 @@ portfolio/portfolio/__pycache__/settings.cpython-310.pyc
 portfolio/portfolio/__pycache__/urls.cpython-310.pyc
 portfolio/portfolio/__pycache__/views.cpython-310.pyc
 portfolio/portfolio/__pycache__/wsgi.cpython-310.pyc
+/.idea/django.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/vcs.xml
