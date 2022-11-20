@@ -6,3 +6,6 @@ from django.http import HttpResponse
 
 def employee(request):
     return HttpResponse("This is the employee Page")
+
+def profile(request):
+    return render(request,'employee/profile.html')
