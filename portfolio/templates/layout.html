@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg text-bg-success navbar-light p-2">
+    <nav class="navbar navbar-expand-sm text-bg-success navbar-light p-2">
       <!-- Container wrapper -->
       <div class="container-fluid">
         <!-- Navbar brand -->
@@ -36,13 +36,16 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <!-- Link -->
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
+              <a class="nav-link text-white" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">About</a>
+              <a class="nav-link text-white" href="{% url 'about' %}">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Contact</a>
+              <a class="nav-link text-white" href="{% url 'contact' %}">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="{% url 'profile' %}">Profile</a>
             </li>
           </ul>
           <!-- Search -->
