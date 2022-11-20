@@ -3,7 +3,12 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'index.html')
+    text = {
+        'name': "Belent Patrus",
+        'age': 23,
+        'phone': 45454545
+    }
+    return render(request, 'index.html', text)
 
 
 def about(request):
