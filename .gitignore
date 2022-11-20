@@ -17,3 +17,4 @@ portfolio/portfolio/__pycache__/wsgi.cpython-310.pyc
 /.idea/modules.xml
 /.idea/inspectionProfiles/profiles_settings.xml
 /.idea/vcs.xml
+portfolio/asset/*
