@@ -20,3 +20,5 @@ portfolio/portfolio/__pycache__/wsgi.cpython-310.pyc
 portfolio/asset/*
 
 HTML Theme/*
+
+__pycache__
