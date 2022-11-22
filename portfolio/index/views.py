@@ -1,13 +1,18 @@
 from django.shortcuts import render
+from .models import about
 
 
 def home(request):
-    return render(request, 'index.html')
+    aboutdata = about.objects.all()[0]
+    context = {
+        'about': aboutdata
+    }
+    return render(request, 'index.html', context)
 
 
-def about(request):
+def aboutus(request):
     return render(request, 'about.html')
 
 
-def contact(request):
+def contactus(request):
     return render(request, 'contact.html')
