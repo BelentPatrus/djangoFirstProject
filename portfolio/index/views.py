@@ -1,12 +1,15 @@
 from django.shortcuts import render
-from .models import about
+from .models import about, slider
 
 
 def home(request):
     aboutdata = about.objects.all()[0]
+    sliderdata = slider.objects.all()
     context = {
-        'about': aboutdata
+        'about': aboutdata,
+        'slider': sliderdata
     }
+
     return render(request, 'index.html', context)
 
 

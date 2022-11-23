@@ -3,7 +3,7 @@
     Home Page
 {% endblock title %}
 {% block content %}
-    {% include "slider.html" %}
+    {% include "slider.html" with sliderdata=slider %}
     {% load static %}
     <main id="main">
         <!-- ======= About Us Section ======= -->
@@ -17,10 +17,7 @@
                 <div class="row content">
                     <div class="col-lg-6" data-aos="fade-right">
                         <h2>{{ about.title }}</h2>
-                        <img src="{{ about.image.url }}"
-                             alt="#"
-                             style="height:200px;
-                                    width:400px">
+                        <img src="{{ about.image.url }}" alt="#" style="height:200px; width:400px">
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
                         <p>{{ about.description }}</p>
