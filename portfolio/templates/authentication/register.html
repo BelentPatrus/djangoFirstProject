@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+{% block title %}
+    Registration Page
+{% endblock title %}
+{% block content %}
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>Registration</h2>
+                <ol>
+                    <li>
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li>Registration</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!-- End Breadcrumbs -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row mt-5 justify-content-center" data-aos="fade-up">
+                <div class="col-lg-4">
+                    <h2>Register Your Account</h2>
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <div class="form-group mb-2">
+                            <input type="text"
+                                   name="name"
+                                   class="form-control"
+                                   id="name"
+                                   placeholder="name"
+                                   required>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="email"
+                                   name="email"
+                                   class="form-control"
+                                   id="name"
+                                   placeholder="email"
+                                   required>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="Passward"
+                                   name="Passward"
+                                   class="form-control"
+                                   id="name"
+                                   placeholder="Passward"
+                                   required>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="Passward"
+                                   name="confirm_pass"
+                                   class="form-control"
+                                   id="name"
+                                   placeholder="Confirm Password"
+                                   required>
+                        </div>
+                        <div class="text-center p-2">
+                            <button class="btn btn-success btn-lg" type="submit">Register Now</button>
+                        </div>
+                    </form>
+                    <small >
+                        <p class="text-center">
+                            Already have an Account? <a href="{% url 'login' %}">Login Now</a>
+                        </p>
+                    </small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+    <!-- End #main -->
+    <a href="#"
+       class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+{% endblock content %}

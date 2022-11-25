@@ -8,7 +8,7 @@ def login(request):
 
 
 def registration(request):
-    return render(request, 'authentication/registration.html')
+    return render(request, 'authentication/register.html')
 
 
 def forgetpassword(request):
