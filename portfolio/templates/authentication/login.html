@@ -27,26 +27,21 @@
                     <form action="" method="post">
                         {% csrf_token %}
                         <div class="form-group mb-2">
-                            <input type="email"
-                                   name="email"
+                            <input type="text"
+                                   name="username"
                                    class="form-control"
-                                   id="name"
-                                   placeholder="email"
+                                   id="username"
+                                   placeholder="Username"
                                    required>
                         </div>
                         <div class="form-group mb-2">
                             <input type="Password"
                                    name="password"
                                    class="form-control"
-                                   id="name"
+                                   id="password"
                                    placeholder="Password"
                                    required>
                         </div>
-                        {% comment %} <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div> {% endcomment %}
                         <small>
                             <p class="text-center">
                                 Forget My <a href="{% url 'forgetpassword' %}">Passward</a>
