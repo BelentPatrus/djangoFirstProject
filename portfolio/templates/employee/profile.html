@@ -10,7 +10,7 @@
         <h2>My Profile</h2>
         <ol>
           <li>
-            <a href="index.html">Home</a>
+            <a href="{% url 'home' %}">Home</a>
           </li>
           <li>Profile</li>
         </ol>
@@ -25,12 +25,15 @@
         <div class="col-lg-10">
           <div class="info-wrap">
             <div class="row">
-              <div class="col-lg-6 info">
+              <div class="col-lg-4">
                 <h5>Name:</h5>
-              </div>
-              <div class="col-lg-4 info mt-6 mt-lg-0">
                 <p>
-                  <a href="#">Logout:</a>
+                  Login by <b>{{ user.username }}</b>
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <p>
+                  <a href="{% url 'logout' %}">Logout:</a>
                 </p>
               </div>
             </div>
